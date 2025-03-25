@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> 
+
+<body>
+
+    <!-- Barre de navigation -->
+    <header>
+        <h1>LOUCKMAN KABRE</h1>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#a-propos">À propos</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#competences">Competences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+      
+    </header>
+
+    <!-- Section Accueil -->
+    <section id="accueil">
+    <div class="accueil-container">
+        <!-- 🌙 Texte à gauche -->
+        <div class="text-container">
+            <h2>Bienvenue sur mon Portfolio</h2>
+            <p>Je suis Louckman KABRE, un passionné de développement web et de design graphique.  
+                J'adore créer des interfaces modernes et interactives en HTML, CSS et JavaScript.
+            </p>
+            <a href="#projets" class="btn">Voir mes projets</a>
+        </div>
+
+        <!-- 🌙 Image à droite -->
+        <div class="image-container">
+            <img src="images/Programmer multi language information infographic concept on computer screen.jpg" alt="Illustration Portfolio">
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Section À propos -->
+<section id="a-propos">
+    <div class="container">
+        <!-- 🌙 Texte + bouton à gauche -->
+        <div class="text-container">
+            <h2>À propos de moi</h2>
+            <p>Je suis Loukman KABRE, un passionné de développement web et de design graphique.  
+                J'aime créer des visuel et charte graphique avec Photoshop, Illustror.
+            </p>
+            <a href="documents/Kabre Louckman ok.pdf" class="btn" download>Télécharger mon CV</a>
+        </div>
+
+        <!-- 🌙 Image de profil à droite -->
+        <div class="image-container">
+            <img src="images/DSC_256.png" alt="Photo de profil">
+        </div>
+    </div>
+</section>
+
+
+    <!-- Section Projets -->
+<section id="projets">
+    <h2>Mes Projets</h2>
+    <div class="projets-container">
+        <!-- 🌙 Projet 1 -->
+        <div class="projet-box">
+            <img src="images/sana ex_.png" alt="Projet 1">
+            <h3>Projet 1</h3>
+            <p>J'ai eu le plaisir de concevoir le flyer d'une entreprise de livraison..</p>
+            <a href="#" class="btn">Voir</a>
+        </div>
+
+        <!-- 🌙 Projet 2 -->
+        <div class="projet-box">
+            <img src="images/proposition1.jpg" alt="Projet 2">
+            <h3>Projet 2</h3>
+            <p>Campagne de lancement dune cimenterie...</p>
+            <a href="#" class="btn">Voir</a>
+        </div>
+
+        <!-- 🌙 Projet 3 -->
+        <div class="projet-box">
+            <img src="images/Presentation_Mockup_3.png" alt="Projet 3">
+            <h3>Projet 3</h3>
+            <p>une marquette d'entreprise que j'ai eu le plaisir de realiser...</p>
+            <a href="#" class="btn">Voir</a>
+        </div>
+    </div>
+</section>
+
+
+<section id="competences">
+    <h2>Mes Compétences</h2>
+    <div class="competence-container">
+
+        <div class="competence left">
+            <h3>Photoshop</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;">80%</div>
+            </div>
+        </div>
+
+        <div class="competence right">
+            <h3>Illustrator</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 70%;">70%</div>
+            </div>
+        </div>
+
+      
+        <div class="competence right">
+            <h3>Bureautique</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 90%;">90%</div>
+            </div>
+        </div>
+
+        <div class="competence left">
+            <h3>HTML</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 50%;">50%</div>
+            </div>
+        </div>
+
+        <div class="competence right">
+            <h3>CSS</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 30%;">30%</div>
+            </div>
+        </div>
+
+        <div class="competence left">
+            <h3>JavaScript</h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 10%;">10%</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="contact">
+    <h2>Contactez-moi</h2>
+    <form id="contact-form">
+        <div class="form-group">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Envoyer</button>
+    </form>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <p>Designed by LOUKMAN KABRE with HTML CSS JS</p>
+        </div>
+        <div class="footer-right">
+            <p>&copy; Tous droits réservés-2025.</p>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="script.js"></script> <!-- Lien vers le JavaScript -->
+</body>
+</html>

@@ -1,0 +1,514 @@
+/* 🌙 Style global en Dark Mode */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* 🌙 Appliquer le fond sombre */
+body {
+    background-color: #121212; /* Fond noir/gris foncé */
+    color: #e0e0e0; /* Texte gris clair */
+    text-align: center;
+}
+
+/* 🌙 Style du header et de la navigation */
+header {
+    background-color: #1e1e1e; /* Fond du menu sombre */
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* 🌙 Ajustement du menu de navigation */
+header {
+    display: flex;
+    justify-content: space-between; /* Espace entre le titre et les liens */
+    align-items: center;
+    padding: 15px 50px;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #ff5733;
+    border-radius: 5px;
+}
+
+/* 🌙 Responsive : Ajuster la disposition sur petits écrans */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+/* 🌙 Sections */
+section {
+    padding: 100px 20px;
+    margin-top: 60px;
+}
+
+/* 🌙 SECTION ACCUEIL */
+#accueil {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Hauteur ajustée */
+    padding: 50px 10%; /* Marge moyenne avec le header */
+}
+
+/* 🌙 Conteneur principal */
+.accueil-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 100%;
+}
+
+/* 🌙 Texte aligné à gauche */
+.text-container {
+    max-width: 500px;
+    text-align: left;
+}
+
+.text-container h2 {
+    font-size: 36px;
+    color: #ff5733;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* 🌙 Bouton */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff5733;
+    color: #1e1e1e;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #e04e2a;
+}
+
+/* 🌙 Image alignée à droite */
+.image-container img {
+    width: 350px; /* Ajuste la taille selon tes besoins */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 🌙 Responsive : Ajustement pour les petits écrans */
+@media (max-width: 768px) {
+    #accueil {
+        height: auto;
+        padding: 50px 5%;
+    }
+
+    .accueil-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-container {
+        max-width: 100%;
+    }
+
+    .image-container img {
+        width: 80%;
+        margin-top: 20px;
+    }
+}
+
+
+/* 🌙 SECTION À PROPOS */
+#a-propos {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    padding: 80px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+/* 🌙 Conteneur principal */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* 🌙 Texte à gauche */
+.text-container {
+    max-width: 500px;
+}
+
+/* 🌙 Bouton Télécharger mon CV */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff5733;
+    color: #1e1e1e;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #e04e2a;
+}
+
+/* 🌙 Image à droite */
+.image-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #ff5733;
+}
+
+/* 🌙 Responsive : Ajustement pour petits écrans */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container img {
+        width: 150px;
+        height: 150px;
+        margin-top: 20px;
+    }
+
+    .text-container {
+        max-width: 100%;
+    }
+}
+
+/* 🌙 SECTION PROJETS */
+#projets {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 80px 10%;
+}
+
+/* 🌙 Titre de la section */
+#projets h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #ff5733;
+}
+
+/* 🌙 Conteneur des projets */
+.projets-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* 🌙 Box Projet */
+.projet-box {
+    background-color: #292929;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+    min-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+/* 🌙 Effet au survol */
+.projet-box:hover {
+    transform: scale(1.05);
+}
+
+/* 🌙 Image dans la box */
+.projet-box img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* 🌙 Titre du projet */
+.projet-box h3 {
+    margin: 15px 0 10px;
+    font-size: 24px;
+    color: #ff5733;
+}
+
+/* 🌙 Description du projet */
+.projet-box p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* 🌙 Bouton "Voir" */
+.projet-box .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff5733;
+    color: #1e1e1e;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.projet-box .btn:hover {
+    background-color: #e04e2a;
+}
+
+/* 🌙 Responsive : Ajustement pour petits écrans */
+@media (max-width: 768px) {
+    .projets-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projet-box {
+        width: 80%;
+    }
+}
+
+/* 🌙 SECTION COMPÉTENCES - Dark Mode & Responsive */
+#competences {
+    padding: 50px 10%;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+#competences h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ff5733;
+}
+
+/* Conteneur des compétences */
+.competence-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Style de chaque compétence */
+.competence {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 45%;  /* Chaque compétence occupe 45% de largeur */
+    min-width: 280px;
+}
+
+/* Titre des compétences */
+.competence h3 {
+    width: 120px;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ff5733;
+}
+
+/* Barre de progression */
+.progress-bar {
+    width: 60%;
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 8px;
+    position: relative;
+}
+
+/* Barre de progression animée */
+.progress {
+    background-color: #ff5733;
+    height: 100%;
+    transition: width 1s ease-in-out;
+    text-align: right;
+    padding-right: 5px;
+    font-size: 0.8rem;
+    color: white;
+}
+
+/* 🛠️ RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+    .competence {
+        width: 100%;  /* En mobile, chaque compétence occupe 100% */
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .progress-bar {
+        width: 100%;
+    }
+}
+
+
+/* 🌙 SECTION CONTACT */
+#contact {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 80px 10%;
+}
+
+/* 🌙 Titre */
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #ff5733;
+}
+
+/* 🌙 Formulaire */
+#contact-form {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+/* 🌙 Groupes de champs */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #292929;
+    border: 1px solid #ff5733;
+    color: #e0e0e0;
+    border-radius: 5px;
+}
+
+/* 🌙 Bouton */
+#contact-form .btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #ff5733;
+    color: #1e1e1e;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+#contact-form .btn:hover {
+    background-color: #e04e2a;
+}
+
+/* 🌙 FOOTER */
+footer {
+    background-color: #121212;
+    color: #e0e0e0;
+    padding: 20px 10%;
+    margin-top: 50px;
+    border-top: 2px solid #ff5733;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-left, .footer-right {
+    font-size: 0.9rem;
+}
+
+/* Alignement à gauche pour la partie Designed by */
+.footer-left {
+    text-align: left;
+}
+
+/* Alignement à droite pour la partie sociale */
+.footer-right {
+    text-align: right;
+}
+
+/* Style des liens sociaux */
+.social-links {
+    margin-top: 5px;
+}
+
+.social-links a {
+    color: #ff5733;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #e04e2a;
+}
+
